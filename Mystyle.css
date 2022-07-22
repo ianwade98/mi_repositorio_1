@@ -1,0 +1,197 @@
+.media {
+    display: flex;
+    align-items: flex-start;
+    border: 5px solid rgb(221, 130, 45);
+    background-color: rgb(243, 211, 31);
+}
+.media .content {
+    flex: 1;
+    padding: 10px;
+}
+
+.box_1{
+    border: 5px solid rgb(221, 130, 45);
+    background-color: rgb(243, 211, 31);
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height: 150px;
+  }
+  
+  .alternate {
+    box-sizing: border-box;
+  }
+    
+  .mybox_2{
+    box-sizing: border-box;
+      width: 100px;
+      border: 10px solid;
+      padding: 20px;
+      border: 5px solid rgb(221, 130, 45);
+      background-color: rgb(243, 211, 31);
+  }
+
+body {
+    display: flex;
+    min-height: 100vh; 
+    flex-direction: column;
+    /* More code ... */
+  }
+
+body {
+    padding-left: 11em;
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: 	rgb(255, 248, 220);
+    background-color: rgb(255, 248, 220) }
+  ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+    width: 9em }
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  ul.navbar li {
+    background: white;
+    margin: 0.5em 0;
+    padding: 0.3em;
+    border-right: 1em solid black }
+  ul.navbar a {
+    text-decoration: none }
+  a:link {
+    color: rgb(255, 248, 220) }
+  a:visited {
+    color: rgb(255, 248, 220) }
+  address {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: thin dotted }
+    
+main {
+  color: gainsboro;
+  margin: 0 auto;
+  max-width: 1000px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px
+    50px
+    1fr
+    100px
+    200px;
+  grid-template-areas:
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-section my-section my-section"
+    "my-aside my-aside my-aside"
+    "my-footer my-footer my-footer"
+}
+ 
+header {
+  grid-area: my-header;
+  background-color: rgb(255, 248, 220);
+  align-self: auto;
+}
+ 
+nav {
+  grid-area: my-nav;
+  background-color: rgb(255, 248, 220);
+}
+ 
+aside {
+  grid-area: my-aside;
+  background-color: rgb(255, 248, 220);
+}
+ 
+section {
+  grid-area: my-section;
+  background-color: rgb(255, 248, 220);
+}
+ 
+footer {
+  grid-area: my-footer;
+  background-color: rgb(255, 248, 220);
+}
+ 
+@media (min-width: 600px) and (max-width: 1000px) {
+  main {
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px
+      100px
+      1fr
+      100px;
+    grid-template-areas:
+      "my-header my-header my-header"
+      "my-nav my-nav my-nav"
+      "my-aside my-section my-section"
+      "my-footer my-footer my-footer"
+  }
+}
+
+.contenedor{
+    height:240px;
+    display:flex;
+    flex-flow:nowrap;
+    align-content:stretch;
+    border: 5px solid rgb(221, 130, 45);
+    background-color: rgb(243, 211, 31);
+    }
+
+    .contenedor_centro{
+      height:50px;
+      display:flex;
+      flex-flow:row wrap;
+      align-content:center;
+      border: 5px solid rgb(221, 130, 45);
+      background-color: rgb(243, 211, 31);
+      padding-left: 28em;
+    font-family: Georgia, "Times New Roman",
+          Times, serif;
+    color: 	rgb(255, 248, 220)
+      }
+
+    .elemento{
+    width:21%;
+    border: 5px solid rgb(221, 130, 45);
+    background-color: rgb(243, 211, 31);
+    }
+    
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 500px;
+      height: 400px;
+      align-content: space-between;
+      border: 5px solid rgb(221, 130, 45);
+      background-color: rgb(243, 211, 31);
+    }
+    
+    .wrapper_1{
+      display: -ms-inline-grid;
+      align-items: auto;
+      grid-template-columns: 1fr 1fr;
+      border: 5px solid rgb(221, 130, 45);
+      background-color: rgb(243, 211, 31);
+    }
+    
+    @media screen and (min-width: 500px) {
+      .wrapper_1{
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 5px solid rgb(221, 130, 45);
+        background-color: rgb(243, 211, 31);
+      }
+    }
+    
+    @media screen and (min-width: 800px) {
+      .wrapper_1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        border: 5px solid rgb(221, 130, 45);
+        background-color: rgb(243, 211, 31);
+      }
+      
+    }
